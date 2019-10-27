@@ -1,0 +1,33 @@
+.main{
+	width: 100%;
+	position: absolute;
+	display: flex;
+	z-index: 110;
+}
+.main .container{
+	display: flex;
+}
+
+.main .container .arrow-btn{
+	z-index: 110 !important;
+}
+
+.wellcome-box{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: coral;
+}
+
+/* test */
+.connections{
+	width: 50%;
+	height: 100%;
+}
+
+.wellcome-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+

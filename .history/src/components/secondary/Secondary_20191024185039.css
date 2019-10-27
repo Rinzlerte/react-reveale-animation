@@ -1,0 +1,12 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 150;
+}
+
+.connections{
+	width: 50%;
+	height: 100%;
+}

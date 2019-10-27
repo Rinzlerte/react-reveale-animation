@@ -1,0 +1,42 @@
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-box{
+    pointer-events: none;
+    opacity: 1;
+    width: 550px;
+    /* transform: matrix(1.1, 0, 0, 1.1, 341, 228); */
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu-box-link{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: -0.04em;
+    transform-origin: center center 0px;
+    will-change: transform;
+    cursor: pointer;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: GothamHTF;
+    text-align: center;
+    transform: translate3d(179px, 0px, 0px);
+    visibility: inherit;
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu-box-link:hover{
+    opacity: 0.6;
+    transform: translate3d(179px, 0px, 0px) scale(1.05, 1.05);
+}

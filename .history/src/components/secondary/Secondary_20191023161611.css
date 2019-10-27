@@ -1,0 +1,39 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.connections{
+	width: 50%;
+	height: 100%;
+}
+
+
+/* background-image: url(../../Resources/images/architecture-black-and-white.jpg); */
+
+
+.connetcion-box{
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    text-align: left;
+}
+
+figure.connetcion-box * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  figure.connetcion-box img {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}

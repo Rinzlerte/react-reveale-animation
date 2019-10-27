@@ -1,0 +1,32 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.connections{
+	width: 50%;
+	height: 100%;
+}
+
+.secondary-box{
+width: 50%;
+height: 100%;
+}
+
+
+.box{
+	width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.connetcion-box{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../Resources/images/architecture-black-and-white.jpg);
+}

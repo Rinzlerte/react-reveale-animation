@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+.home, .container{
+  width: 100%;
+}
+
+
+/* animation .container */
+
+.container{
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.side-wrapper{
+  width: 50%;
+  height: 100%;
+}
+  
+.item{
+  width: 100%;
+  height: 50%;
+}
+
+.box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+
+/* HEADER */
+.header_logo{
+  font-size: 28px;
+  background-color: whitesmoke;
+}
+.header_logo:hover{
+  transform: scale(1.1);
+  border: 1.1px solid black;
+}
+
+.wellcome-wrapper{
+  flex-direction: column;
+  display: flex;
+}
+
+
+/* UI */
+.arrow-btn, .back-btn, .cross-btn{
+  display: block;
+}
+
+.arrow-btn, .cross-btn, .back-btn{
+  background-size: cover !important;
+}
+
+.arrow-btn{
+  position: absolute;
+  z-index: 99;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 6px;
+  bottom: 0;
+}
+
+.m  {
+z-index: 110;
+}
+.s{
+z-index: 150;
+position: absolute;
+}
+.t{
+  z-index: 190;
+  position: absolute;
+}
+
+
+.ts{
+  width: 56px;
+  height: 56px;
+  background-image: url(../Resources//images/logos/down-arrow.svg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1000;
+}
+.cross-link{
+  display: block;
+  background-size: cover !important;
+}
+
+/* STYLING TEXT HOVER */
+
+.connetcion-box{
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative !important;
+  overflow: hidden;
+  background: #000000;
+  text-align: left;
+}
+
+.connetcion-box * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.connetcion-box img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  background-position: center;
+  background-size: cover;
+}
+.connetcion-box figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.connetcion-box figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  
+}
+.connetcion-box h2,
+.connetcion-box p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+.connetcion-box h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.connetcion-box h2 span {
+  font-weight: 800;
+}
+.connetcion-box p {
+  display: block;
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+.connetcion-box:hover img {
+  opacity: 0.3;
+}
+.connetcion-box:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.connetcion-box:hover figcaption .serg {
+  /* display: block; */
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.connetcion-box:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.connetcion-box:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+@media (max-width: 768px) { 
+  
+}

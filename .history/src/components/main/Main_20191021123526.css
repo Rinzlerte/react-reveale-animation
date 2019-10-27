@@ -1,0 +1,23 @@
+hr {
+	border-color: #fff;
+}
+
+.gsap-btn {
+	background-color: #73b102;
+	color: #fff;
+}
+
+.gsap-btn:hover,
+.gsap-btn:active,
+.gsap-btn:focus {
+	background-color: #88ce02;
+}
+
+.logo {
+	width: 150px;
+}
+.container{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}

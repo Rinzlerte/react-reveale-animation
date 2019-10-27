@@ -1,0 +1,6 @@
+.third{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+}

@@ -1,0 +1,14 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.test{
+    width: 70%;
+    height: 150px;
+    border: 1px solid black;
+}

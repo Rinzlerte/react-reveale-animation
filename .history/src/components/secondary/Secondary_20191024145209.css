@@ -1,0 +1,23 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.connections{
+	width: 50%;
+	height: 100%;
+}
+
+.secondary-footer{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+}
+.secondary-footer:hover{
+  background-color: red;
+}

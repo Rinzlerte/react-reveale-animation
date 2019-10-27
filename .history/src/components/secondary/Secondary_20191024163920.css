@@ -1,0 +1,19 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 150;
+}
+
+.connections{
+	width: 50%;
+	height: 100%;
+}
+
+.ff{
+  background-color: coral;
+}
+.ff:hover{
+  background-color: red;
+}

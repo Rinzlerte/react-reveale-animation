@@ -1,0 +1,122 @@
+.secondary {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.connections{
+	width: 50%;
+	height: 100%;
+}
+
+
+/* background-image: url(../../Resources/images/architecture-black-and-white.jpg); */
+
+
+figure.connetcion-box{
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    text-align: left;
+}
+
+figure.connetcion-box * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  figure.connetcion-box img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    background-position: center;
+    background-size: cover;
+}
+figure.connetcion-box figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* padding: 30px 3em; */
+    width: 100%;
+    height: 100%;
+  }
+  figure.connetcion-box figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 100%;
+    border-left: 4px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.connetcion-box h2,
+  figure.connetcion-box p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+  }
+  figure.connetcion-box h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(30%, 0%, 0);
+    transform: translate3d(30%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  figure.connetcion-box h2 span {
+    font-weight: 800;
+  }
+  figure.connetcion-box p {
+    font-weight: 200;
+    -webkit-transform: translate3d(0%, 30%, 0);
+    transform: translate3d(0%, 30%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  figure.connetcion-box a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+  }
+  figure.connetcion-box:hover img {
+    opacity: 0.3;
+  }
+  figure.connetcion-box:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  figure.connetcion-box:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.connetcion-box:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }

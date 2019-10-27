@@ -1,0 +1,7 @@
+.third{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 180;
+}
